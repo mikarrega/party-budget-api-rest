@@ -1,0 +1,97 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+    "name": "serviço teste 2",
+    "description": "descrição de teste",
+    "price": 1600,
+    "image": "https://blog.euvou.events/wp-content/uploads/2021/10/assessoria-de-eventos.png"
+}
+
+
+###
+GET http://localhost:3000/api/services
+
+###
+GET http://localhost:3000/api/services/63f2db6880f5647230e89c5f
+
+###
+DELETE http://localhost:3000/api/services/63f2db6880f5647230e89c5f
+
+
+###
+PUT http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+    "name": "TESTE ATUALIZAÇÃO",
+    "description": "descrição de teste",
+    "price": 2000,
+    "image": "https://blog.euvou.events/wp-content/uploads/2021/10/assessoria-de-eventos.png"
+}
+
+
+###
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "Meu evento 2",
+    "author": "Mika",
+    "description": "Festa de aniversário",
+    "budget": 3000,
+    "image": "https://blog.euvou.events/wp-content/uploads/2021/10/assessoria-de-eventos.png",
+    "services": [
+        {
+            "name": "Algum serviço 1",
+            "description": "descrição de teste",
+            "price": 3000,
+            "image": "https://blog.euvou.events/wp-content/uploads/2021/10/assessoria-de-eventos.png"
+        },
+        {
+            "name": "Algum serviço 2",
+            "description": "descrição de teste",
+            "price": 1600,
+            "image": "https://blog.euvou.events/wp-content/uploads/2021/10/assessoria-de-eventos.png"
+        }
+    ]
+}
+
+
+###
+GET http://localhost:3000/api/parties
+
+
+###
+GET http://localhost:3000/api/parties/63f6af9173d080c71c293aed
+
+
+###
+DELETE http://localhost:3000/api/parties/63f6af9173d080c71c293aed
+
+
+###
+PUT http://localhost:3000/api/parties/63f6b01273d080c71c293aef
+Content-Type: application/json
+
+{
+    "title": "Meu evento 2",
+    "author": "Mika",
+    "description": "Festa de aniversário",
+    "budget": 1000,
+    "image": "https://blog.euvou.events/wp-content/uploads/2021/10/assessoria-de-eventos.png",
+    "services": [
+        {
+            "name": "Algum serviço 1",
+            "description": "descrição de teste",
+            "price": 3000,
+            "image": "https://blog.euvou.events/wp-content/uploads/2021/10/assessoria-de-eventos.png"
+        },
+        {
+            "name": "Algum serviço 2",
+            "description": "descrição de teste",
+            "price": 1600,
+            "image": "https://blog.euvou.events/wp-content/uploads/2021/10/assessoria-de-eventos.png"
+        }
+    ]
+}
