@@ -1,4 +1,16 @@
-# party-budget-api-rest
+# Party Time API REST
+
+### 💻 Projeto
+
+Este projeto consiste em desenvolver uma API RESTful. Com esta API será possível cadastrar festas para realizar um gerenciamento de custo durante os orçamentos. Através deste sistema é possível disponibilizar orçamentos e adicionar serviços com base neste mesmo orçamento.
+
+### 📎 Features 
+
+- [x] Cadastrar festas
+- [x] Solicitar/escolher orçamentos
+- [x] Modificar festa
+- [x] Deletar festa
+- [x] Caso o seu budget não se esteja alinhada com o valor dos orçamentos, a festa não poderá ser criada.
 
 ### ⚙ Pré-requisitos
 
@@ -32,8 +44,10 @@ Ele abre uma aba em seu visualcode informando o status e o json da sua requisiç
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 NodeJS
+Express
 Javascript
 MongoDB
+
 
 ### 📕 Bibliotecas
 Esse projeto utilizou as seguintes lib:
